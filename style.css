@@ -1,0 +1,800 @@
+/* General styling */
+.stApp {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+/* Header container */
+.header-container {
+    text-align: left;
+    padding: 20px 30px;
+    margin-bottom: 15px;
+    background: white;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* Section divider */
+.section-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(0,0,0,0.1), transparent);
+    margin: 5px 0 10px 0;
+}
+
+/* Menu card styling */
+.menu-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.menu-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Upload card specific styling */
+.upload-card {
+    border: none;
+    background-color: white;
+    transition: all 0.3s ease;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: none;
+}
+
+.upload-card:hover {
+    box-shadow: none;
+}
+
+/* Results card specific styling */
+.results-card {
+    background-color: white;
+}
+
+/* Placeholder image styling */
+.placeholder-image {
+    padding: 40px;
+    text-align: center;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    max-width: 500px;
+}
+
+.placeholder-image img {
+    transition: all 0.5s ease;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.1));
+}
+
+.placeholder-image:hover img {
+    transform: scale(1.05) rotate(5deg);
+}
+
+.placeholder-text {
+    font-size: 1.2rem;
+    color: #4B5563;
+    margin-top: 25px;
+    font-weight: 500;
+}
+
+.instructions-title {
+    color: #FF4B4B;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.instructions-text {
+    color: #4b5563;
+    font-size: 1.15rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.steps-container {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-top: 25px;
+    border: 1px solid rgba(255, 75, 75, 0.1);
+    transition: all 0.3s ease;
+}
+
+.steps-container:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border-color: rgba(255, 75, 75, 0.2);
+}
+
+.steps-title {
+    color: #374151;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid rgba(255, 75, 75, 0.1);
+    padding-bottom: 10px;
+}
+
+.steps-list {
+    text-align: left;
+    padding-left: 15px;
+    margin-top: 15px;
+}
+
+.steps-list li {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    padding: 8px 5px;
+    border-radius: 8px;
+}
+
+.steps-list li:hover {
+    background-color: rgba(255, 75, 75, 0.05);
+    transform: translateX(5px);
+}
+
+.step-number {
+    background-color: #FF4B4B;
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    box-shadow: 0 3px 6px rgba(255, 75, 75, 0.2);
+    transition: all 0.3s ease;
+}
+
+.steps-list li:hover .step-number {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(255, 75, 75, 0.3);
+}
+
+.step-text {
+    color: #4b5563;
+    font-size: 1.05rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.steps-list li:hover .step-text {
+    color: #FF4B4B;
+}
+
+/* Card title styling */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-title::after {
+    display: none;
+}
+
+.card-description {
+    color: #6B7280;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+/* Upload instructions */
+.upload-instructions {
+    border: 2px dashed #d1d5db;
+    border-radius: 8px;
+    padding: 40px 20px;
+    text-align: center;
+    color: #6B7280;
+    margin: 15px 0;
+    background-color: #f9fafb;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.upload-instructions:hover {
+    border-color: #FF4B4B;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.camera-icon {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.upload-instructions:hover .camera-icon {
+    transform: scale(1.1);
+}
+
+.upload-instructions p {
+    margin: 5px 0;
+    font-weight: 400;
+    font-size: 0.95rem;
+    color: #6B7280;
+}
+
+.upload-subtitle {
+    font-size: 0.8rem;
+    color: #9CA3AF;
+    margin-top: 10px;
+}
+
+/* Uploaded image container */
+.uploaded-image-container {
+    margin: 15px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+}
+
+/* Button container */
+.button-container {
+    margin: 20px 0 10px 0;
+}
+
+/* Progress container */
+.progress-container {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+/* Results header */
+.results-header {
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    background-color: #f8fafc;
+    border: 1px solid #e5e7eb;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.results-count {
+    color: #6B7280;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.highlight {
+    color: #FF4B4B;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Menu grid styling */
+.menu-grid {
+    margin: 0 -6px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+/* Dish card styling */
+.dish-card {
+    background-color: white;
+    border-radius: 12px;
+    margin-bottom: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dish-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Dish image container */
+.dish-image-container {
+    overflow: hidden;
+    border: none;
+    transition: all 0.3s ease;
+    height: 180px;
+    width: 100%;
+    position: relative;
+}
+
+.dish-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.dish-card:hover .dish-image-container img {
+    transform: scale(1.05);
+}
+
+/* Dish content container */
+.dish-content {
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Dish name styling */
+.dish-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 2px 0;
+    color: #1E3A8A;
+    transition: color 0.3s ease;
+    line-height: 1.2;
+}
+
+.dish-card:hover .dish-name {
+    color: #FF4B4B;
+}
+
+/* Dish description styling */
+.dish-description {
+    font-size: 0.9rem;
+    color: #4B5563;
+    margin: 0;
+    line-height: 1.3;
+    flex: 1;
+}
+
+/* Removed generating indicator */
+
+/* Image error */
+.image-error {
+    color: #b91c1c;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 15px;
+    background-color: #fee2e2;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Warning and error containers */
+.warning-container, .error-container {
+    margin: 20px 0;
+}
+
+/* Extracted text */
+.extracted-text {
+    font-family: monospace;
+    font-size: 0.9rem;
+    white-space: pre-wrap;
+    background-color: #f9fafb;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Main title styling */
+.main-title {
+    font-size: 1.8rem;
+    color: #333333;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+    text-align: left;
+}
+
+/* Subtitle styling */
+.subtitle {
+    font-size: 1rem;
+    color: #4B5563;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 800px;
+    text-align: left;
+}
+
+/* Footer styling */
+.footer {
+    font-size: 0.9rem;
+    color: #6B7280;
+    text-align: center;
+    margin-top: 35px;
+    padding: 15px 0;
+    border-top: 1px solid rgba(255, 75, 75, 0.1);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.footer:hover {
+    color: #FF4B4B;
+}
+
+/* Loading animation */
+.loading-animation {
+    color: #FF4B4B;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: rgba(255, 75, 75, 0.05);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.loading-animation:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    border: 2px solid #FF4B4B;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s cubic-bezier(0.5, 0.1, 0.5, 0.9) infinite;
+    box-shadow: 0 0 5px rgba(255, 75, 75, 0.2);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Custom button styling */
+.stButton > button {
+    width: 100%;
+    border-radius: 10px !important;
+    font-weight: 600 !important;
+    padding: 12px 18px !important;
+    font-size: 1.05rem !important;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    border: none !important;
+    box-shadow: 0 4px 10px rgba(255, 75, 75, 0.15) !important;
+    position: relative !important;
+    overflow: hidden !important;
+    background-color: #FF4B4B !important;
+    color: white !important;
+    letter-spacing: 0.3px !important;
+}
+
+.stButton > button:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 6px 15px rgba(255, 75, 75, 0.25) !important;
+    background-color: #ff3a3a !important;
+}
+
+.stButton > button:active {
+    transform: translateY(0) !important;
+    box-shadow: 0 2px 5px rgba(255, 75, 75, 0.2) !important;
+}
+
+.button-container {
+    margin: 25px 0 15px 0;
+}
+
+/* Streamlit column styling for better grid layout */
+.st-emotion-cache-ocqkz7 {
+    padding: 0 6px !important;
+}
+
+/* Remove vertical gap between columns */
+div[data-testid="column"] {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Target Streamlit's column container */
+.st-emotion-cache-7ym5gk {
+    gap: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Reduce spacing in Streamlit containers */
+.st-emotion-cache-1kyxreq {
+    margin-top: -15px !important;
+}
+
+/* Reduce spacing between elements */
+.st-emotion-cache-16txtl3 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* Remove vertical spacing between rows */
+.row-widget.stVerticalBlock {
+    gap: 0 !important;
+}
+
+/* Ensure no gap between dish rows */
+.dish-row {
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-bottom: -15px !important;
+}
+
+/* Remove vertical spacing in column containers */
+.st-emotion-cache-1r6slb0 {
+    gap: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Custom file uploader */
+.stFileUploader > div {
+    padding: 0 !important;
+    border-radius: 0 !important;
+    border: none !important;
+    transition: all 0.3s ease !important;
+    background-color: transparent !important;
+}
+
+/* Hide the default file uploader UI */
+.stFileUploader > div > small {
+    display: none !important;
+}
+
+/* Improve file uploader button */
+.stFileUploader > div > button {
+    background-color: #f8f9fa !important;
+    color: #4B5563 !important;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 8px !important;
+    padding: 8px 16px !important;
+    font-size: 0.9rem !important;
+    transition: all 0.2s ease !important;
+}
+
+.stFileUploader > div > button:hover {
+    background-color: #FF4B4B !important;
+    color: white !important;
+    border-color: #FF4B4B !important;
+}
+
+/* Tips list styling */
+.tips-list {
+    padding-left: 20px;
+}
+
+.tips-list li {
+    margin-bottom: 10px;
+    color: #4B5563;
+}
+
+.tips-list strong {
+    color: #1E3A8A;
+}
+
+/* Streamlit default element overrides */
+.stProgress > div > div > div {
+    background-color: #1a56db !important;
+}
+
+.stExpander {
+    border: 1px solid #e5e7eb !important;
+    border-radius: 8px !important;
+}
+
+/* Make sure the sidebar looks good */
+.css-1d391kg, .css-163ttbj, .css-1wrcr25 {
+    background-color: #f8fafc !important;
+}
+
+/* Sidebar styling */
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px 15px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #FF4B4B 0%, #ff7676 100%);
+    box-shadow: 0 4px 15px rgba(255, 75, 75, 0.2);
+}
+
+.sidebar-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-subtitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 0;
+    font-weight: 500;
+}
+
+.sidebar-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.sidebar-section:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.sidebar-section-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #FF4B4B;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgba(255, 75, 75, 0.1);
+    padding-bottom: 10px;
+}
+
+.sidebar-text {
+    font-size: 0.95rem;
+    color: #4B5563;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.sidebar-process {
+    border-radius: 10px;
+    padding: 5px 0;
+}
+
+.process-step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 18px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.process-step:hover {
+    background-color: rgba(255, 75, 75, 0.05);
+    transform: translateX(5px);
+}
+
+.process-number {
+    background-color: #FF4B4B;
+    color: white;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-right: 12px;
+    flex-shrink: 0;
+    box-shadow: 0 3px 6px rgba(255, 75, 75, 0.2);
+}
+
+.process-text {
+    font-size: 0.95rem;
+    color: #4B5563;
+    line-height: 1.5;
+}
+
+.process-step:hover .process-text strong {
+    color: #FF4B4B;
+}
+
+.tech-category {
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+}
+
+.tech-category:hover {
+    background-color: rgba(255, 75, 75, 0.05);
+    transform: translateY(-2px);
+}
+
+.tech-title {
+    font-weight: 600;
+    color: #FF4B4B;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 75, 75, 0.1);
+    padding-bottom: 5px;
+}
+
+.tech-item {
+    color: #4B5563;
+    font-size: 0.9rem;
+    margin: 6px 0;
+    padding-left: 5px;
+    border-left: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.tech-item:hover {
+    border-left: 2px solid #FF4B4B;
+    padding-left: 8px;
+    color: #FF4B4B;
+}
+
+.sidebar-footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.footer-divider {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, rgba(255, 75, 75, 0.2), transparent);
+    margin: 15px 0;
+}
+
+.version-text {
+    font-size: 0.95rem;
+    color: #4B5563;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.github-link {
+    color: #FF4B4B;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background-color: rgba(255, 75, 75, 0.1);
+}
+
+.github-link:hover {
+    color: white;
+    background-color: #FF4B4B;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(255, 75, 75, 0.2);
+}
+
+.update-text {
+    font-size: 0.85rem;
+    color: #6B7280;
+    margin-top: 8px;
+}
